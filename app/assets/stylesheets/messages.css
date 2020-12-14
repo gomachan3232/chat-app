@@ -1,0 +1,44 @@
+.wrapper{
+  display:flex;
+}
+
+
+.leftline{
+  width: 300px;
+  height:100vh;
+  background-color: #253141;
+}
+
+.leftline-header{
+  height: 100px;
+  padding: 0 20px;
+}
+
+
+.rightline{
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+}
+
+.rightline-header{
+  height: 100px;
+  padding: 0 40px;
+}
+
+.underleft{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+}
+
+.centerright{
+  background-color: #fafafa;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+}
+
+.underright{
+  background-color: #dddddd;
+  height: 90px;
+  padding: 20px 40px;
+}
