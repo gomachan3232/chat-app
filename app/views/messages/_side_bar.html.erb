@@ -1,6 +1,6 @@
 <div class="leftline-header">
   <div class="username">
-    <a href="#">inori</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="chatcreate">
     <a href="#">チャットを作成する</a>
