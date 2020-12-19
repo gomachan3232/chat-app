@@ -39,7 +39,7 @@
   </div>
 </div>
 
-<div class= "underright">
+<%# <div class= "underright">
     <div class="typemessage">
       <input class="formmessage" placeholder="type a message">
       <label class="form-image">
@@ -49,4 +49,15 @@
     </div>
     <input class="send" type="submit" value="送信">
     </div>
-</div>
+</div> %>
+
+<%= form_with model: [@room, @message] , class:"underright", local: true do |f| %>
+  <div class="typemessage">
+    <%= f.text_field :content, class: "formmessage", placeholder: "type a message" %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <%= f.file_field :image, class: "hidden" %>
+    </label>
+  </div>
+  <%= f.submit "送信", class: "send "%>
+<% end %>
