@@ -11,8 +11,8 @@
 
 
 <div class= "centerright">
-
-  <div class="centerrightall">
+  <%= render partial: "message", collection: @messages %>
+ <%#<div class="centerrightall">
     <div class="chatusertime">
       <div class="chatusername">inori
       </div>
@@ -23,7 +23,7 @@
       <div class="message">おやすみなせ〜
       </div>
     </div>
-  </div>
+  </div> 
     
     <div class="centerrightall">
     <div class="chattime">
@@ -36,7 +36,7 @@
       <div class="message">おやすみなせ〜!
       </div>
     </div>
-  </div>
+  </div> %>
 </div>
 
 <%# <div class= "underright">
